@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD ELECTRON - MYSQL</title>
+    <!-- diseño bootswatch (bootstrap) -->
+    <link rel="stylesheet" href="../recursos/css/luma_bootstrap.min.css">
+    <!-- diseño propio -->
+    <link rel="stylesheet" href="../recursos/css/app.css">
+    <!-- libreria de animacion css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+</head>
+<body>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 mt-2 p-4">
+                <div class="card-custom d-flex mb-3 shadow-sm">
+                    <div class="mr-auto p-2 "><h3> Ingresar Datos productos</h3></div>
+                </div>
+                <form class="card card-body mt-2" id="productForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre producto" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="price" step="any" placeholder="Precio producto" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="description" rows="4" placeholder="Descripción producto" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-success"><i class="fas fa-check"></i> Guardar</button>
+                    </div>
+                </form>
+                <!-- <h5 class="my-2">productos creados <span class="badge badge-success" id="cantidad"></span></h5> -->
+            </div>
+            <div class="col-md-6 mt-2 p-4">
+                <div class="card-custom d-flex mb-3 shadow-sm">
+                    <div class="mr-auto p-2 "><h3> Detalle Producto </h3></div>
+                    <div class="my-auto p-2"><h5 class="productos creados">Productos creados <span class="badge badge-success" id="cantidad"></span></h5></div>
+                </div>
+                <div id="productos"></div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="../recursos/js/app.js"></script>
+</body>
+</html>
